@@ -105,6 +105,7 @@ void loop() {
 //digitalWrite(ledPin, value);
  
   // Return the response
+/*
   client.println("HTTP/1.1 200 OK");
   client.println("Content-Type: text/html");
   client.println(""); //  do not forget this one
@@ -130,13 +131,15 @@ void loop() {
   {
     client.print("STOP");
   }
-  
-  client.println("<br><br>");
-  client.println("<a href=\"/RIGHT\"\"><button>RIGHT </button></a>");
-  client.println("<a href=\"/LEFT\"\"><button>LEFT </button></a><br />");  
-  client.println("<a href=\"/FORWARD\"\"><button>FORWARD </button></a><br />"); 
-  client.println("<a href=\"/BACKWARD\"\"><button>BACKWARD </button></a><br />"); 
-  client.println("<a href=\"/STOP\"\"><button>STOP </button></a><br />"); 
+  */
+  //client.println("<br><br>");
+  client.print("<body style='align-items:center;display:flex;flex-direction:column;margin-top: 50vh;'>");
+  client.println("<a href=\"/FORWARD\"\" ><button  style='padding-top:20px;padding-bottom:20px;margin-bottom: 20px;background-image:linear-gradient(to bottom right,#673AB7,#3F51B5);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>FORWARD </button></a>"); 
+  client.println("<a href=\"/RIGHT\"\" ><button style='padding-top:20px;padding-bottom:20px;margin-right: 124px;background-image: linear-gradient(to bottom right,#8BC34A,#4CAF50);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>RIGHT </button>");
+  client.println("<a href=\"/LEFT\"\"><button style='padding-top:20px;padding-bottom:20px;color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;;background-image: linear-gradient(to bottom right,#FFEB3B,#9ba117)'>LEFT </button></a>");  
+  client.println("<a href=\"/BACKWARD\"\"><button   style='padding-top:20px;padding-bottom:20px;margin-top: 22px;background-image:linear-gradient(to bottom right,#a51647,#ba1da9);color:white;border-radius: 12px;width: 23vh;font-size: 4em;height: 14vh;'>BACKWARD </button></a>"); 
+  client.println("<a href=\"/STOP\"\"><button  style='padding-top:20px;padding-bottom:20px;margin-top: 80px;padding-left: 149px;padding-right:149px;background-color:#F44336;color:white;border-radius: 12px;width: 100vw;font-size: 4em;height: 14vh;'>STOP </button></a>"); 
+  client.println("</body>");
   client.println("</html>");
  
   delay(1);
