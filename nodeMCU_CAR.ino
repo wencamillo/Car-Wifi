@@ -99,46 +99,18 @@ void loop() {
     value ="STOP";
   }
   
- 
- 
-// Set ledPin according to the request
-//digitalWrite(ledPin, value);
- 
-  // Return the response
-/*
-  client.println("HTTP/1.1 200 OK");
-  client.println("Content-Type: text/html");
-  client.println(""); //  do not forget this one
-  client.println("<!DOCTYPE HTML>");
-  client.println("<html>");
- 
-  client.print("Your car is moving ");
- 
-  if(value == "RIGHT") {
-    client.print("RIGHT");
-  } else if(value="LEFT"){
-    client.print("LEFT");
-  }
-  else if(value=="FORWARD")
-  {
-    client.print("FORWARD");
-  }
-  else if(value=="BACKWARD")
-  {
-    client.print("BACKWARD");
-  }
-  else if(value=="STOP")
-  {
-    client.print("STOP");
-  }
-  */
-  //client.println("<br><br>");
   client.print("<body style='align-items:center;display:flex;flex-direction:column;margin-top: 50vh;'>");
-  client.println("<a href=\"/FORWARD\"\" ><button  style='padding-top:20px;padding-bottom:20px;margin-bottom: 20px;background-image:linear-gradient(to bottom right,#673AB7,#3F51B5);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>FORWARD </button></a>"); 
-  client.println("<a href=\"/RIGHT\"\" ><button style='padding-top:20px;padding-bottom:20px;margin-right: 124px;background-image: linear-gradient(to bottom right,#8BC34A,#4CAF50);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>RIGHT </button>");
-  client.println("<a href=\"/LEFT\"\"><button style='padding-top:20px;padding-bottom:20px;color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;;background-image: linear-gradient(to bottom right,#FFEB3B,#9ba117)'>LEFT </button></a>");  
-  client.println("<a href=\"/BACKWARD\"\"><button   style='padding-top:20px;padding-bottom:20px;margin-top: 22px;background-image:linear-gradient(to bottom right,#a51647,#ba1da9);color:white;border-radius: 12px;width: 23vh;font-size: 4em;height: 14vh;'>BACKWARD </button></a>"); 
-  client.println("<a href=\"/STOP\"\"><button  style='padding-top:20px;padding-bottom:20px;margin-top: 80px;padding-left: 149px;padding-right:149px;background-color:#F44336;color:white;border-radius: 12px;width: 100vw;font-size: 4em;height: 14vh;'>STOP </button></a>"); 
+  client.println("<a><button style='padding-top:20px;padding-bottom:20px;margin-bottom: 20px;background-image:linear-gradient(to bottom right,#6b0000,#3F51B5);color:white;border-radius: 12px;width: 100vw;font-size: 2em;height: 14vh;margin-bottom: 10vh;'>Feito por: Daniela, Leonardo, Matheus e Wendell</button></a>");
+  client.println("<br><br>");
+  
+  
+  client.println("<a href=\"/FORWARD\"\" ><button  style='padding-top:20px;padding-bottom:20px;margin-bottom: 20px;background-image:linear-gradient(to bottom right,#673AB7,#3F51B5);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>FORWARD</button></a>"); 
+  client.println("<div>");
+  client.println("<a href=\"/RIGHT\"\" ><button style='padding-top:20px;padding-bottom:20px;margin-right: 124px;background-image: linear-gradient(to bottom right,#8BC34A,#4CAF50);color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;'>RIGHT</button>");
+  client.println("<a href=\"/LEFT\"\"><button style='padding-top:20px;padding-bottom:20px;color:white;border-radius: 12px;width: 22vh;font-size: 4em;height: 14vh;;background-image: linear-gradient(to bottom right,#FFEB3B,#9ba117)'>LEFT </button></a><br/>");  
+   client.println("</div>");
+  client.println("<a href=\"/BACKWARD\"\"><button   style='padding-top:20px;padding-bottom:20px;margin-top: 22px;background-image:linear-gradient(to bottom right,#a51647,#ba1da9);color:white;border-radius: 12px;width: 23vh;font-size: 4em;height: 14vh;margin-bottom: 10vh;'>BACKWARD</button></a><br/>"); 
+  client.println("<a href=\"/STOP\"\"><button  style='padding-top:20px;padding-bottom:20px;margin-top: 80px;padding-left: 149px;padding-right:149px;background-color:#F44336;color:white;border-radius: 12px;width: 100vw;font-size: 4em;height: 14vh;'>STOP</button></a><br/>"); 
   client.println("</body>");
   client.println("</html>");
  
